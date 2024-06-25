@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <style type="text/css">
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .form-control{
+            display: block;
+            margin-bottom: 25px;
+        }
+        form{
+            background-color: white;
+            margin: 50px auto;
+            padding: 30px 30px;
+            max-width: 450px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea{
+            width: 95%;
+            padding: 10px;
+            outline: none;
+            font-size: 15px;
+            display: block;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+        button{
+            width: 100%;
+            padding: 10px 10px;
+            font-size: 15px;
+            outline: none;
+            cursor: pointer;
+            background-color: aqua;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="text-align: center;">Welcome to survey form</h1>
+    <form>
+        <fieldset>
+        <div class="form-control">
+            <label style="display: block; margin-bottom: 10px;">Name</label>
+            <input type="text" name="username" placeholder="Enter your name"/>
+        </div>
+        <div class="form-control">
+            <label style="display: block; margin-bottom: 10px;">Email</label>
+            <input type="email" name="email" placeholder="Enter your email"/>
+        </div>
+        <div class="form-control">
+            <label style="display: block; margin-bottom: 10px;">Age</label>
+            <input type="number" name="age" placeholder="Enter your age"/>
+        </div>
+        <div class="form-control">
+            <label style="display: block; margin-bottom: 10px;">Gender</label>
+            <input type="radio" name="male" />Male
+            <input type="radio" name="male" />Female
+            <input type="radio" name="male" />No need to mention
+        </div>
+        <div class="form-control">
+            <label style="display: block; margin-bottom: 10px;">Which option best desc you</label>
+            <select>
+                <option>Student</option>
+                <option>Professional</option>
+                <option>Business man</option>
+                <option>Government Employee</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label style="display: block; margin-bottom: 10px;">Language you want to learn</label>
+            <input type="checkbox" name="cpp">CPP
+            <input type="checkbox" name="cpp">C
+            <input type="checkbox" name="cpp">Java
+            <input type="checkbox" name="cpp">Python
+            <input type="checkbox" name="cpp">Javascript
+        </div>
+        <div class="form-control">
+        <label style="display: block; margin-bottom: 10px;">Any comment or suggestion</label>
+        <textarea placeholder="message" minlength="5"></textarea>
+    </div>
+    <button>Submit</button>
+    </fieldset>
+    </form>
+</body>
+</html>
